@@ -9,9 +9,10 @@ from tkinter import StringVar
 from tkinter import Entry
 from tkinter import W
 from tkinter import END
-# from tkinter import *
 
 from random import randint
+
+from pathlib import Path
 
 def reset():
     resd4.configure(text="")
@@ -45,7 +46,7 @@ WIDTH = 336
 
 body=Tk()
 
-body.iconbitmap("C:/Users/Tom/Desktop/projects/coding/python/DnDie/d20.ico")
+body.iconbitmap(Path('.','d20.ico'))
 
 body.minsize(179, 264)
 
