@@ -46,7 +46,10 @@ WIDTH = 336
 
 body=Tk()
 
-body.iconbitmap(Path('.','d20.ico'))
+try:
+    body.iconbitmap(Path('.','d20.ico'))
+except:
+    print("error: icon not supported")
 
 body.minsize(179, 264)
 
